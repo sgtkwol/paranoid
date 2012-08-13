@@ -61,7 +61,7 @@ cd out/target/product/epicmtd
 
 cp base-build.zip base-build.zip
 
-zip base-build.zip system/lib system/app system/framework
+zip -r base-build.zip system/lib system/app system/framework system/etc system/build.prop
 
 grep system/build.prop and set variable
 
