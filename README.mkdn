@@ -54,14 +54,25 @@ We're an open source project, and we're open to suggestions. Feel free to sumbit
 Personal build script---WIP
 
 rm out/target/product/epicmtd/system/build.prop
+
 ./rom-build.sh epicmtd
+
 cd out/target/product/epicmtd
+
 cp base-build.zip base-build.zip
+
 zip base-build.zip system/lib system/app system/framework
+
 grep system/build.prop and set variable
+
 truncate variable
+
 mv base-build.zip ~/android/javatools/$variable.zip
+
 cd ~/android/javatools
+
 sign $variable.zip $variable-signed
+
 zipalign $variable-signed -vf 4 $variable-signed $variable.zip
+
 cp $variable.zip ~/android/marcusant
